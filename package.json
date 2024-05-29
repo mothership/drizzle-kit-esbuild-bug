@@ -1,0 +1,33 @@
+{
+  "name": "drizzle-esbuild-bug",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Mothership Technologies, Inc.",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "migration:generate": "pnpm drizzle-kit generate --config ./src/drizzle.config.ts",
+    "migration:generate:working": "pnpm drizzle-kit generate --config ./dist/drizzle.config.js",
+    "premigration:generate:working": "pnpm build",
+    "echo-config": "pnpm build && node dist/"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.10",
+    "esbuild": "^0.21.4",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@types/pg": "^8.11.6",
+    "drizzle-kit": "^0.21.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": "20.12.1"
+  }
+}
