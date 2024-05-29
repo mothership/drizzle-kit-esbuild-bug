@@ -20,7 +20,7 @@ DatabaseConfig {
 }
 ```
 
-See that drizzle will fail to compile it / is not respecting the tsconfig:
+See that esbuild will fail to compile the decorators / experimentalDecorators setting from the tsconfig is not respected:
 
 ```
 > drizzle-esbuild-bug@0.0.1 migration:generate 
