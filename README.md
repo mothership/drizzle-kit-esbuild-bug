@@ -6,7 +6,7 @@
 $ pnpm i
 ```
 
-Observe TSConfig allows decorators to work: 
+TSConfig compiles the decorators just fine: 
 
 ```
 $ pnpm echo-config
@@ -20,7 +20,7 @@ DatabaseConfig {
 }
 ```
 
-See that drizzle will fail to compile it:
+See that drizzle will fail to compile it / is not respecting the tsconfig:
 
 ```
 > drizzle-esbuild-bug@0.0.1 migration:generate 
