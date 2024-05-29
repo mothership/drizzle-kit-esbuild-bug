@@ -26,7 +26,6 @@ export const load = <T extends object>(cls: ClassConstructor<T>, config: Record<
     const transformed = plainToInstance(cls, cfg, { exposeDefaultValues: true, excludeExtraneousValues: true })
     const errors = validateSync(transformed, { skipMissingProperties: false })
     if (errors.length > 0) {
-      // Remap the errors to show the name of the environment variable in the error message
       const errMessage = errors.toString()
       throw new Error(errMessage)
     }
