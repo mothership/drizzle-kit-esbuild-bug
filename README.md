@@ -1,6 +1,6 @@
 # Drizzle-Kit / ESBuild-Register Bug 
 
-* Repro steps*
+**Repro steps**
 
 ```
 $ pnpm i
