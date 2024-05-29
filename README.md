@@ -23,6 +23,7 @@ DatabaseConfig {
 See that esbuild will fail to compile the decorators / experimentalDecorators setting from the tsconfig is not respected with esbuild-register:
 
 ```
+$ pnpm migration:generate
 > drizzle-esbuild-bug@0.0.1 migration:generate 
 > pnpm drizzle-kit generate --config ./src/drizzle.config.ts
 
