@@ -17,7 +17,7 @@
     "class-validator": "^0.14.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.10",
-    "esbuild": "^0.21.4",
+    "esbuild": "^0.28.1",
     "pg": "^8.11.5",
     "reflect-metadata": "^0.2.0"
   },
